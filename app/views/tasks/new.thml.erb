@@ -1,2 +1,7 @@
 <h1>新規タスク</h1>
-こんにちは
+<%= form_for(@task) do |f| %>
+<div><%= f.lavel :title %></div>
+<div><%= f.texit_filde :title %></div>
+<div><%= f.submit :title %></div>
+<% end %>
+<%=link_to("戻る", tasks_path　) %>
